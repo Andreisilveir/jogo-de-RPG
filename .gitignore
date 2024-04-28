@@ -1,18 +1,285 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
-
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+from random import randint
+from time import sleep
+load = randint(0,2)
+dez = randint(0, 10)
+vinte = randint(0, 20)
+nome = input('Qual seu nome?')
+print('carregando...')
+sleep(load)
+print('carregando...')
+sleep(load)
+print('carregando...')
+sleep(load)
+print('-=' * 15)
+print('=---Seja bem vindo ao RPG---=')
+print('=-' * 15)
+sleep(1)
+print('Vamos criar seu personagem:')
+sleep(0.5)
+print('Ficha tecnica Basica:')
+sleep(0.5)
+nickname = input('Qual é o nome do(a) personagem?')
+sleep(0.3)
+sexo = input('Qual é o genero do personagem?[M/S]')
+sleep(0.3)
+idade = int(input('Qual a idade do seu(sua) personagem:'))
+sleep(0.3)
+print('-=' * 15)
+print('Ficha tecnica caracteristica:')
+aparencia = input('Sua aparência é:')
+sleep(0.3)
+altura = float(input('Qual a altura do seu(sua) personagem:'))
+sleep(0.3)
+Porte = input('Qual vai ser o porte físico:')
+sleep(0.3)
+olhos = input('Qual a cor dos olhos:')
+sleep(0.3)
+características = input('características marcantes:')
+sleep(0.3)
+print('-=' * 15)
+print('Sua roupa e acessorio:')
+acessórios = input('acessórios usados com frequência:')
+sleep(0.3)
+Roupa = input('estilo de roupa:')
+sleep(0.3)
+print('-=' * 15)
+print('ficha tecnica extra:')
+doença = input('sofre de doenças?')
+sleep(0.3)
+andar = input('Seu jeito de andar e se portar é:')
+sleep(0.3)
+print('-=' * 15)
+print('Familia:')
+hierarquia = input('Sua hierarquia na sociedade é?')
+sleep(0.3)
+print('Qual a raça do seu(sua) personagem:')
+print('''[ 1 ]Humano
+[ 2 ]Elfo
+[ 3 ]Anão
+[ 4 ]Troll
+[ 5 ]Goblins''')
+Raça = int(input('Qual a raça do seu personagem?'))
+if Raça == 1:
+    print('-=' * 20)
+    print('Oque o seu(sua) humano é:')
+    print('-=' * 20)
+    print('''    [ 1 ]Bárbaro
+    [ 2 ]Bardo
+    [ 3 ]Mago
+    [ 4 ]Bruxo
+    [ 5 ]Clérigo''')
+    classe = int(input('Qual a classe?'))
+    if classe == 1:
+        sleep(1)
+        print('Carregando...')
+        sleep(0.5)
+        print('-=' * 10)
+        print(f'''Ficha tecnica Basica:
+        Nome:{nickname}
+        Gênero:{sexo}
+        Idade:{idade}
+        Altura:{altura:.2f}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''Ficha tecnica caracteristica:
+        Porte físico:{Porte}
+        Cor dos olhos:{olhos}
+        Características marcantes:{características}
+        Sua aparência é:{aparencia}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''Sua roupa e acessorio:
+        Acessórios usados com frequência:{acessórios}
+        Estilo de roupa:{Roupa}''')
+        print('-=' * 10)
+        sleep(5)
+        print('-=' * 20)
+        print(f'''Familia:
+        Sua hierarquia na sociedade é?{hierarquia}
+        Raça:Humano
+        Classe:Bárbaro''')
+        print(f'''ficha tecnica extra:
+        Sofre de doenças?{doença}
+        Seu jeito de andar e se portar é:{andar}''')
+        print('-=' * 20)
+        sleep(5)
+    if classe == 2:
+        sleep(1)
+        print('Carregando...')
+        sleep(0.5)
+        print('-=' * 10)
+        print(f'''Ficha tecnica Basica:
+        Nome:{nickname}
+        Gênero:{sexo}
+        Idade:{idade}
+        Altura:{altura:.2f}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''Ficha tecnica caracteristica:
+        Porte físico:{Porte}
+        Cor dos olhos:{olhos}
+        Características marcantes:{características}
+        Sua aparência é:{aparencia}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''sua roupa e acessorio:
+        Acessórios usados com frequência:{acessórios}
+        Estilo de roupa:{Roupa}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''Familia:
+        Sua hierarquia na sociedade é?{hierarquia}
+        Raça:Humano
+        Classe:Bardo''')
+        print(f'''ficha tecnica extra:
+        Sofre de doenças?{doença}
+        Seu jeito de andar e se portar é:{andar}''')
+        print('-=' * 10)
+        sleep(5)
+    if classe == 3:
+        sleep(1)
+        print('Carregando...')
+        sleep(0.5)
+        print('-=' * 10)
+        print(f'''Ficha tecnica Basica:
+        Nome:{nickname}
+        Gênero:{sexo}
+        Idade:{idade}
+        Altura:{altura:.2f}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''Ficha tecnica caracteristica:
+        Porte físico:{Porte}
+        Cor dos olhos:{olhos}
+        Características marcantes:{características}
+        Sua aparência é:{aparencia}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''sua roupa e acessorio:
+        Acessórios usados com frequência:{acessórios}
+        Estilo de roupa:{Roupa}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''Familia:
+        Sua hierarquia na sociedade é?{hierarquia}
+        Raça:Humano
+        Classe:Mago''')
+        print(f'''ficha tecnica extra:
+        Sofre de doenças?{doença}
+        Seu jeito de andar e se portar é:{andar}''')
+        print('-=' * 10)
+        sleep(5)
+    if classe == 4:
+        sleep(1)
+        print('Carregando...')
+        sleep(0.5)
+        print('-=' * 10)
+        print(f'''Ficha tecnica Basica:
+        Nome:{nickname}
+        Gênero:{sexo}
+        Idade:{idade}
+        Altura:{altura:.2f}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''Ficha tecnica caracteristica:
+        Porte físico:{Porte}
+        Cor dos olhos:{olhos}
+        Características marcantes:{características}
+        Sua aparência é:{aparencia}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''Sua roupa e acessorio:
+        Acessórios usados com frequência:{acessórios}
+        Estilo de roupa:{Roupa}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''Familia:
+        Sua hierarquia na sociedade é?{hierarquia}
+        Raça:Humano
+        Classe:Bruxo''')
+        print(f'''ficha tecnica extra:
+        Sofre de doenças?{doença}
+        Seu jeito de andar e se portar é:{andar}''')
+        print('-=' * 10)
+        sleep(5)
+    if classe == 5:
+        sleep(1)
+        print('Carregando...')
+        sleep(0.5)
+        print('-=' * 10)
+        print(f'''Ficha tecnica Basica:
+        Nome:{nickname}
+        Gênero:{sexo}
+        Idade:{idade}
+        Altura:{altura:.2f}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''Ficha tecnica caracteristica:
+        Porte físico:{Porte}
+        Cor dos olhos:{olhos}
+        Características marcantes:{características}
+        Sua aparência é:{aparencia}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''sua roupa e acessorio:
+        Acessórios usados com frequência:{acessórios}
+        Estilo de roupa:{Roupa}''')
+        print('-=' * 10)
+        sleep(5)
+        print(f'''Familia:
+        Sua hierarquia na sociedade é?{hierarquia}
+        Raça:Humano
+        Classe:Clerigo''')
+        print(f'''Ficha tecnica extra:
+        Sofre de doenças?{doença}
+        Seu jeito de andar e se portar é:{andar}''')
+        print('-=' * 20)
+        sleep(5)
+if Raça == 2:
+    print('Oque o seu(sua) elfo é:')
+    print('''
+    [ 1 ]Bárbaro
+    [ 2 ]Mago''')
+    classe = input('Qual classe?')
+    print(f'''Detalhes do seu personagem:
+        nome:{nickname}
+        gênero{sexo}
+        idade:{idade}
+        raça:{Raça}
+        classe:{classe}''')
+    if Raça == 3:
+        print('Oque o seu(sua) Anão é:')
+        print('''
+           [ 1 ]Bárbaro
+           [ 2 ]Mago''')
+        classe = input('Qual classe?')
+        print(f'''Detalhes do seu personagem:
+            nome:{nickname}
+            gênero{sexo}
+            idade:{idade}
+            raça:{Raça}
+            classe:{classe}''')
+    if Raça == 4:
+        print('Oque o seu(sua) Troll é:')
+        print('''
+            [ 1 ]Bárbaro
+            [ 2 ]Mago''')
+        classe = input('Qual classe?')
+        print(f'''Detalhes do seu personagem:
+            nome:{nickname}
+            gênero{sexo}
+            idade:{idade}
+            raça:{Raça}
+            classe:{classe}''')
+    if Raça == 5:
+        print('Oque o seu(sua) Goblins é:')
+        print('''
+            [ 1 ]Bárbaro
+            [ 2 ]Mago''')
+        classe = input('Qual classe?')
+        print(f'''Detalhes do seu personagem:
+            nome:{nickname}
+            gênero:{sexo}
+            idade:{idade}
+            raça:{Raça}
+            classe:{classe}''')
