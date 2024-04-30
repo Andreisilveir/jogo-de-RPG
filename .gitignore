@@ -1,285 +1,103 @@
-from random import randint
+from random import *
 from time import sleep
-load = randint(0,2)
-dez = randint(0, 10)
-vinte = randint(0, 20)
-nome = input('Qual seu nome?')
-print('carregando...')
-sleep(load)
-print('carregando...')
-sleep(load)
-print('carregando...')
-sleep(load)
-print('-=' * 15)
-print('=---Seja bem vindo ao RPG---=')
-print('=-' * 15)
-sleep(1)
-print('Vamos criar seu personagem:')
-sleep(0.5)
-print('Ficha tecnica Basica:')
-sleep(0.5)
-nickname = input('Qual é o nome do(a) personagem?')
-sleep(0.3)
-sexo = input('Qual é o genero do personagem?[M/S]')
-sleep(0.3)
-idade = int(input('Qual a idade do seu(sua) personagem:'))
-sleep(0.3)
-print('-=' * 15)
-print('Ficha tecnica caracteristica:')
-aparencia = input('Sua aparência é:')
-sleep(0.3)
-altura = float(input('Qual a altura do seu(sua) personagem:'))
-sleep(0.3)
-Porte = input('Qual vai ser o porte físico:')
-sleep(0.3)
-olhos = input('Qual a cor dos olhos:')
-sleep(0.3)
-características = input('características marcantes:')
-sleep(0.3)
-print('-=' * 15)
-print('Sua roupa e acessorio:')
-acessórios = input('acessórios usados com frequência:')
-sleep(0.3)
-Roupa = input('estilo de roupa:')
-sleep(0.3)
-print('-=' * 15)
-print('ficha tecnica extra:')
-doença = input('sofre de doenças?')
-sleep(0.3)
-andar = input('Seu jeito de andar e se portar é:')
-sleep(0.3)
-print('-=' * 15)
-print('Familia:')
-hierarquia = input('Sua hierarquia na sociedade é?')
-sleep(0.3)
-print('Qual a raça do seu(sua) personagem:')
-print('''[ 1 ]Humano
-[ 2 ]Elfo
-[ 3 ]Anão
-[ 4 ]Troll
-[ 5 ]Goblins''')
-Raça = int(input('Qual a raça do seu personagem?'))
-if Raça == 1:
-    print('-=' * 20)
-    print('Oque o seu(sua) humano é:')
-    print('-=' * 20)
-    print('''    [ 1 ]Bárbaro
-    [ 2 ]Bardo
-    [ 3 ]Mago
-    [ 4 ]Bruxo
-    [ 5 ]Clérigo''')
-    classe = int(input('Qual a classe?'))
-    if classe == 1:
-        sleep(1)
-        print('Carregando...')
-        sleep(0.5)
-        print('-=' * 10)
-        print(f'''Ficha tecnica Basica:
-        Nome:{nickname}
-        Gênero:{sexo}
-        Idade:{idade}
-        Altura:{altura:.2f}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''Ficha tecnica caracteristica:
-        Porte físico:{Porte}
-        Cor dos olhos:{olhos}
-        Características marcantes:{características}
-        Sua aparência é:{aparencia}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''Sua roupa e acessorio:
-        Acessórios usados com frequência:{acessórios}
-        Estilo de roupa:{Roupa}''')
-        print('-=' * 10)
-        sleep(5)
-        print('-=' * 20)
-        print(f'''Familia:
-        Sua hierarquia na sociedade é?{hierarquia}
-        Raça:Humano
-        Classe:Bárbaro''')
-        print(f'''ficha tecnica extra:
-        Sofre de doenças?{doença}
-        Seu jeito de andar e se portar é:{andar}''')
-        print('-=' * 20)
-        sleep(5)
-    if classe == 2:
-        sleep(1)
-        print('Carregando...')
-        sleep(0.5)
-        print('-=' * 10)
-        print(f'''Ficha tecnica Basica:
-        Nome:{nickname}
-        Gênero:{sexo}
-        Idade:{idade}
-        Altura:{altura:.2f}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''Ficha tecnica caracteristica:
-        Porte físico:{Porte}
-        Cor dos olhos:{olhos}
-        Características marcantes:{características}
-        Sua aparência é:{aparencia}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''sua roupa e acessorio:
-        Acessórios usados com frequência:{acessórios}
-        Estilo de roupa:{Roupa}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''Familia:
-        Sua hierarquia na sociedade é?{hierarquia}
-        Raça:Humano
-        Classe:Bardo''')
-        print(f'''ficha tecnica extra:
-        Sofre de doenças?{doença}
-        Seu jeito de andar e se portar é:{andar}''')
-        print('-=' * 10)
-        sleep(5)
-    if classe == 3:
-        sleep(1)
-        print('Carregando...')
-        sleep(0.5)
-        print('-=' * 10)
-        print(f'''Ficha tecnica Basica:
-        Nome:{nickname}
-        Gênero:{sexo}
-        Idade:{idade}
-        Altura:{altura:.2f}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''Ficha tecnica caracteristica:
-        Porte físico:{Porte}
-        Cor dos olhos:{olhos}
-        Características marcantes:{características}
-        Sua aparência é:{aparencia}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''sua roupa e acessorio:
-        Acessórios usados com frequência:{acessórios}
-        Estilo de roupa:{Roupa}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''Familia:
-        Sua hierarquia na sociedade é?{hierarquia}
-        Raça:Humano
-        Classe:Mago''')
-        print(f'''ficha tecnica extra:
-        Sofre de doenças?{doença}
-        Seu jeito de andar e se portar é:{andar}''')
-        print('-=' * 10)
-        sleep(5)
-    if classe == 4:
-        sleep(1)
-        print('Carregando...')
-        sleep(0.5)
-        print('-=' * 10)
-        print(f'''Ficha tecnica Basica:
-        Nome:{nickname}
-        Gênero:{sexo}
-        Idade:{idade}
-        Altura:{altura:.2f}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''Ficha tecnica caracteristica:
-        Porte físico:{Porte}
-        Cor dos olhos:{olhos}
-        Características marcantes:{características}
-        Sua aparência é:{aparencia}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''Sua roupa e acessorio:
-        Acessórios usados com frequência:{acessórios}
-        Estilo de roupa:{Roupa}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''Familia:
-        Sua hierarquia na sociedade é?{hierarquia}
-        Raça:Humano
-        Classe:Bruxo''')
-        print(f'''ficha tecnica extra:
-        Sofre de doenças?{doença}
-        Seu jeito de andar e se portar é:{andar}''')
-        print('-=' * 10)
-        sleep(5)
-    if classe == 5:
-        sleep(1)
-        print('Carregando...')
-        sleep(0.5)
-        print('-=' * 10)
-        print(f'''Ficha tecnica Basica:
-        Nome:{nickname}
-        Gênero:{sexo}
-        Idade:{idade}
-        Altura:{altura:.2f}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''Ficha tecnica caracteristica:
-        Porte físico:{Porte}
-        Cor dos olhos:{olhos}
-        Características marcantes:{características}
-        Sua aparência é:{aparencia}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''sua roupa e acessorio:
-        Acessórios usados com frequência:{acessórios}
-        Estilo de roupa:{Roupa}''')
-        print('-=' * 10)
-        sleep(5)
-        print(f'''Familia:
-        Sua hierarquia na sociedade é?{hierarquia}
-        Raça:Humano
-        Classe:Clerigo''')
-        print(f'''Ficha tecnica extra:
-        Sofre de doenças?{doença}
-        Seu jeito de andar e se portar é:{andar}''')
-        print('-=' * 20)
-        sleep(5)
-if Raça == 2:
-    print('Oque o seu(sua) elfo é:')
-    print('''
-    [ 1 ]Bárbaro
-    [ 2 ]Mago''')
-    classe = input('Qual classe?')
-    print(f'''Detalhes do seu personagem:
-        nome:{nickname}
-        gênero{sexo}
-        idade:{idade}
-        raça:{Raça}
-        classe:{classe}''')
-    if Raça == 3:
-        print('Oque o seu(sua) Anão é:')
-        print('''
-           [ 1 ]Bárbaro
-           [ 2 ]Mago''')
-        classe = input('Qual classe?')
-        print(f'''Detalhes do seu personagem:
-            nome:{nickname}
-            gênero{sexo}
-            idade:{idade}
-            raça:{Raça}
-            classe:{classe}''')
-    if Raça == 4:
-        print('Oque o seu(sua) Troll é:')
-        print('''
-            [ 1 ]Bárbaro
-            [ 2 ]Mago''')
-        classe = input('Qual classe?')
-        print(f'''Detalhes do seu personagem:
-            nome:{nickname}
-            gênero{sexo}
-            idade:{idade}
-            raça:{Raça}
-            classe:{classe}''')
-    if Raça == 5:
-        print('Oque o seu(sua) Goblins é:')
-        print('''
-            [ 1 ]Bárbaro
-            [ 2 ]Mago''')
-        classe = input('Qual classe?')
-        print(f'''Detalhes do seu personagem:
-            nome:{nickname}
-            gênero:{sexo}
-            idade:{idade}
-            raça:{Raça}
-            classe:{classe}''')
+
+dado20 = randint(0,20)
+dado10 = randint(0,10)
+inimigos = ['Samurais', 'bandidos', 'Assassinos']
+defesa = ['desviou', 'defendeu']
+escolha = choice(defesa)
+escolha1 = choice(inimigos)
+class Personagem:
+    def __init__(self, nome, vida, ataque, defesa):
+        self.nome = nome
+        self.vida = vida
+        self.ataque = ataque
+        self.defesa = defesa
+        self.exp = 1
+        self.level = 1
+        self.exp_para_level = 100
+
+    def atacar(self, alvo):
+        dano = self.ataque - alvo.defesa
+        if dano > 0:
+            alvo.vida -= dano
+            print(F'O {self.nome} atacou {alvo.nome} e causou {dano} pontos de dano')
+        else:
+            print(f'{alvo.nome} {escolha} do ataque ')
+
+    def verifica_vida(self):
+        if self.vida <= 0:
+            print(f'{self.nome} morreu')
+            return True
+        else:
+            return False
+    def ganhar_experiencia(self, exp):
+        self.exp += exp
+        print(f"{self.nome} ganhou {exp} pontos de experiência!")
+        if self.exp >= self.exp_para_level_up:
+            self.level_up()
+
+    def level_up(self):
+        self.level += 1
+        self.exp -= self.exp_para_level_up
+        self.exp_para_level_up = int(self.exp_para_level_up * 1.5)
+        print(f"{self.nome} subiu para o nível {self.level}!")
+
+    def __str__(self):
+        return f"{self.nome} (Nível {self.level}) - Vida: {self.vida} - Ataque: {self.ataque} - Defesa: {self.defesa}"
+
+class Jogador(Personagem):
+    def __init__(self, nome, vida, ataque, defesa):
+        super().__init__(nome, vida, ataque, defesa)
+        self.itens = []
+
+    def usar_item(self, item):
+        if item in self.itens:
+            self.itens.remove(item)
+            item.usar(self)
+            print(f"{self.nome} usou {item.nome}.")
+        else:
+            print(f"{self.nome} não possui esse item.")
+
+    def __str__(self):
+        return f"Jogador: {super().__str__()}"
+
+
+class Monstro(Personagem):
+    def __init__(self, nome, vida, ataque, defesa, exp_recompensa):
+        super().__init__(nome, vida, ataque, defesa)
+        self.exp_recompensa = exp_recompensa
+        self.nome = 'Samurais'
+
+    def __str__(self):
+        return f"Monstro: {super().__str__()}"
+
+
+class Item:
+    def __init__(self, nome, efeito):
+        self.nome = nome
+        self.efeito = efeito
+
+    def usar(self, personagem):
+        personagem.vida += self.efeito
+        if personagem.vida < 0:
+            personagem.vida = 0
+        print(f"{personagem.nome} recuperou {abs(self.efeito)} pontos de vida.")
+
+
+def batalha(jogador, monstro):
+    print(f"Batalha entre {jogador.nome} e {monstro.nome}!")
+    while True:
+        print(jogador)
+        print(monstro)
+        jogador.atacar(monstro)
+        if monstro.verificar_vida():
+            jogador.ganhar_experiencia(monstro.exp_recompensa)
+            break
+        monstro.atacar(jogador)
+        if jogador.verificar_vida():
+            break
+class dados:
+    def rolagem_de_dados(self, dado, dado1):
+        self.dado1 = dado20
+        self.dado = dado10
